@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Perkenalan Diri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Portofolio </h1>
+</header>
+
+<div class="slider">
+    <div class="slides">
+        <div class="slide">
+            <img src="foto 1.jpg" alt="foto diri sendiri"style="width: 200px;">
+            <div class="text">
+                <h2>Saya Dicky Nugroho</h2>
+                <p>Saya adalah seorang mahasiswa dari jurusan informatika. Saya memiliki minat dalam mengoding.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="foto kampus.jpg" alt="Slide 2"style="width: 300px;">
+            <div class="text">
+                <h2>Pendidikan</h2>
+                <p>Saya menempuh pendidikan di institut teknologi padang dengan jurusan informatika.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="foto ngoding.jpg" alt="Slide 3"style="width: 300px;">
+            <div class="text">
+                <h2>keahlian</h2>
+                <p>Saya memiliki keahlian dalam mengoding. Saya telah banyak menyelesaikan joki tugas mahasiswa.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="foto basket.jpg" alt="hobi saya"style="width: 200px;">
+            <div class="text">
+                <h2>Hobi</h2>
+                <p>Saya berpengalaman juga di bidang olahraga salah satunya  basket. Saya pernah maraih kejuaraan se sumatra barat.  </p>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="text">
+                    <div class="text">
+                        <h2>Visi dan Misi</h2>
+                        <p><strong>Visi:</strong> Menjadi seorang profesional yang berpengaruh dalam bidang informatika, yang mampu memberikan solusi inovatif dan berkelanjutan untuk tantangan yang dihadapi masyarakat.</p>
+                        <p><strong>Misi:</strong></p>
+                        <ul>
+                            <li>Mengembangkan keterampilan dan pengetahuan saya secara terus-menerus untuk tetap relevan dan kompetitif di industri.</li>
+                            <li>Berkomitmen untuk bekerja secara kolaboratif dengan tim dan klien untuk mencapai tujuan bersama.</li>
+                            <li>Menerapkan prinsip etika dan tanggung jawab sosial dalam setiap proyek yang saya kerjakan.</li>
+                            <li>Memberikan kontribusi positif kepada masyarakat melalui proyek-proyek yang berdampak.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <div class="instagram-contact">
+                    <h3>Ikuti Saya di Instagram</h3>
+                    <p>Jika Anda perlu nomor Instagram saya:</p>
+                    <a href="https://www.instagram.com/dcky.ngroho" target="_blank">
+                        <img src="foto instagram.jpg" alt="Instagram" class="social-logo">
+                    </a>
+                </div>
+                <div class="whatsapp-contact">
+                    <h3>Kontak WhatsApp</h3>
+                    <p>Jika Anda perlu nomor WhatsApp saya:</p>
+                    <a href="https://wa.me/6281276727344" target="_blank">
+                        <img src="foto wa.jpg" alt="WhatsApp" class="social-logo">
+                    </a>
+                    <p>(+62) 812-7672-7344</p>
+                </div>
+            </div>
+        </div>
+        </section>
+            </div>
+        </div>
+</div>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+
+    document.getElementById('next').addEventListener('click', () => {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        updateSlidePosition();
+    });
+
+    document.getElementById('prev').addEventListener('click', () => {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        updateSlidePosition
+    });
